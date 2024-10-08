@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: teal;
+}
+
+.header .logo {
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+}
+.logo {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+.material-symbols-outlined{
+    font-size: 25px;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">Lalita-Panchal
+        <span class="material-symbols-outlined">
+            open_in_new
+            </span>
+    </div>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
